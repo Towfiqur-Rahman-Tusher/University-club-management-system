@@ -1,0 +1,42 @@
+
+
+use html,css,javascript,bootstrap 
+
+the header  consist of  Logo at the left side corner in the middle there will be heading(premier university club management system) of the page and on the right side there will be log in/Sign up button
+
+The navbar consist the options:
+Home 
+About us
+Gallery section 
+Contact us
+
+
+
+
+make it more responsive for the device friendly display 
+
+
+#228B22
+#FFFDD0**
+#CC5500
+#FAFAFA**
+#36454F**
+
+
+#00FFFF
+#2F2F2F
+#F5F5F5**
+#98FF98**
+#FF6B6B
+#008080**
+
+
+#2C3E50**
+#F1C40F
+#FF6B6B
+#ECF0F1**
+
+
+
+1. Navy Blue (#2C3E50) + Gold (#FFD700)
+2. Teal (#008080) + Coral (#FF6B6B)

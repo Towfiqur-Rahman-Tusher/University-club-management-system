@@ -1,0 +1,245 @@
+
+.header {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-bar {
+    background-color: #2C3E50;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-link {
+    color: white !important;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover {
+    color: #FFD700 !important;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+.title-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.auth-buttons .btn {
+    padding: 6px 15px !important;
+    font-size: 0.9rem;
+    margin-left: 0;
+    flex: 1;
+    max-width: 120px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Login Button */
+.btn-outline-primary {
+    border: 2px solid #2C3E50;
+    color: #2C3E50 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2C3E50;
+    color: white !important;
+    transform: translateY(-1px);
+}
+
+/* Signup Button */
+.btn-primary {
+    background-color: #2C3E50 !important;
+    border: 1px solid #2C3E50 !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: #4b97e4 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Mobile hover removal for better touch experience */
+@media (hover: none) {
+    .btn:hover {
+        transform: none !important;
+    }
+}
+@media (max-width: 768px) {
+    .title-text {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .header {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    /* New button styling for mobile */
+    .auth-buttons {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        display: flex;
+        gap: 8px;
+    }
+
+    .auth-buttons .btn {
+        padding: 6px 15px !important;
+        font-size: 0.9rem;
+        margin-left: 0;
+        flex: 1;
+        max-width: 120px;
+    }
+
+    /* Adjust header layout */
+    .header .d-flex {
+        display: block !important;
+    }
+}
+
+
+/*main*/
+/* Hover effect styles */
+/* Hover effect styles */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Logo container styling */
+.card-img-container {
+    position: relative;
+    height: 200px; /* Fixed container height */
+    background: #f8f9fa; /* Light background for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Logo image styling */
+.card-img-logo {
+    max-height: 80%; /* Limits logo height within container */
+    max-width: 80%; /* Limits logo width within container */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Maintains aspect ratio without cropping */
+}
+
+/* Existing styles */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+}
+
+.stats-section div[class^="col-"] {
+    transition: transform 0.3s ease;
+}
+
+.stats-section div[class^="col-"]:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    margin-top: auto;
+}
+
+.footer-content {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #2E7D32;
+}
+
+.footer-bottom {
+    background: #222;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.club-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.notification-badge {
+    position: relative;
+    top: -10px;
+    right: -5px;
+}

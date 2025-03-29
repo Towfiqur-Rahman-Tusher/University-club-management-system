@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Club Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <img src="LOGO.png" alt="University Logo" class="logo">
+                
+                <!-- Title -->
+                <h1 class="title-text">Premier University Club Management System</h1>
+                
+                <!-- Auth Buttons -->
+                <div class="auth-buttons ms-auto">
+                    <a href="login.php" class="btn btn-outline-primary">Login</a>
+                    <a href="signup.php" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg nav-bar" style="background-color: #2C3E50; color:white">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br><br>
+<!-- Main Content -->
+<main class="container my-5">
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5 mb-5 rounded-3" 
+             style="background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('university-bg.jpg'); color: white;">
+        <h2 class="display-4 fw-bold mb-3">Welcome to Our Club Community</h2>
+        <p class="lead mb-4">Join 50+ student organizations and manage your campus life</p>
+        <a href="aboutus.html" class="btn btn-warning btn-lg px-4" style="background-color: #FFD700; border: none;">
+            Explore Clubs <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+    </section>
+
+    <!-- Featured Clubs -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm hover-effect">
+                <div class="card-img-container">
+                    <img src="PUDS.png" class="card-img-logo" alt="Debating Society">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-comments me-2"></i>Premier University Debating Society</h5>
+                    <p class="card-text">Engage in lively debates and improve your public speaking skills.</p>
+                    <a href="debating-society.html" class="btn btn-outline-primary">Join Debates</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm hover-effect">
+                <div class="card-img-container">
+                    <img src="PUCC.jpg" class="card-img-logo" alt="Computer Club">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-laptop-code me-2"></i>Premier University Computer Club</h5>
+                    <p class="card-text">Dive into programming, software development, and tech innovations.</p>
+                    <a href="computer-club.html" class="btn btn-outline-primary">View Events</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm hover-effect">
+                <div class="card-img-container">
+                    <img src="PURC.png" class="card-img-logo" alt="Robotics Club">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-robot me-2"></i>Premier University Robotics Club</h5>
+                    <p class="card-text">Design and build robots for competitions and research.</p>
+                    <a href="roboticsclub.html" class="btn btn-outline-primary">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Announcements -->
+<!-- Announcements Section -->
+<section class="announcements mb-5">
+    <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-bullhorn me-2"></i>Latest Announcements</h3>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <span>Debating Society Open Challenge Registration</span>
+            <small class="text-muted">2 hours ago</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <span>Computer Club Hackathon 2024 Schedule Released</span>
+            <small class="text-muted">1 day ago</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <span>Robotics Club Project Submission Deadline</span>
+            <small class="text-muted">3 days ago</small>
+        </a>
+    </div>
+</section>
+
+<!-- Quick Stats -->
+<div class="row text-center stats-section mb-5">
+    <div class="col-md-4 mb-3">
+        <div class="p-3 bg-light rounded-3">
+            <h3 class="text-primary">120+</h3>
+            <p class="mb-0">Debate Awards Won</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="p-3 bg-light rounded-3">
+            <h3 class="text-primary">80+</h3>
+            <p class="mb-0">Tech Projects Developed</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="p-3 bg-light rounded-3">
+            <h3 class="text-primary">45+</h3>
+            <p class="mb-0">Robotics Prototypes Built</p>
+        </div>
+    </div>
+</div>
+</main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@pucms.com</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Premier University Club Management System
+                    . All rights reserved</p>
+            </div>
+        </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

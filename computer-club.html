@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier University Computer Club</title>
+    <link rel="stylesheet" href="club.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <img src="LOGO.png" alt="University Logo" class="logo">
+                
+                <!-- Title -->
+                <h1 class="title-text">Premier University Club Management System</h1>
+                
+                <!-- Auth Buttons -->
+                <div class="auth-buttons ms-auto">
+                    <a href="login.php" class="btn btn-outline-primary">Login</a>
+                    <a href="signup.php" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br><br>
+
+    <!-- Hero Section -->
+    <section class="club-hero text-center">
+        <h1 class="display-4 mb-3">Premier University Computer Club</h1>
+        <p class="lead">Innovate, code, and develop cutting-edge tech solutions with industry experts.</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Carousel -->
+        <div id="debateCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="code1.jpg" class="d-block w-100" alt="Debate Session">
+                </div>
+                <div class="carousel-item">
+                    <img src="code2.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="code3.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="code4.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="code5.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>3
+            </div>
+        </div>
+        <section class="announcements mb-5">
+            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-bullhorn me-2"></i>Latest News</h3>
+            <div class="list-group">
+                <a href="#codingContestDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="codingContestDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>PUCC Coding Contest: Registration Open!</span>
+                        <small class="text-muted">1 hour ago</small>
+                    </div>
+                    <div id="codingContestDetails" class="collapse mt-2">
+                        <p>Premier University Computer Club is excited to announce the opening of registration for our annual coding contest! This year's competition promises to be more challenging and rewarding than ever, with exciting prizes and opportunities to showcase your coding skills. The contest will be held on [Date] at [Time] in [Location]. Register before [Date] to secure your spot. Don't miss this chance to compete with the best and prove your coding prowess!</p>
+                    </div>
+                </a>
+        
+                <a href="#membershipDriveDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="membershipDriveDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>PUCC Membership Drive: Apply Now!</span>
+                        <small class="text-muted">2 hours ago</small>
+                    </div>
+                    <div id="membershipDriveDetails" class="collapse mt-2">
+                        <p>Join the vibrant community of tech enthusiasts at Premier University! PUCC's membership drive is now open, offering students a chance to connect, collaborate, and learn. As a member, you'll gain access to exclusive workshops, networking events, and opportunities to participate in cutting-edge projects. Applications are open until [Date]. Apply today and become a part of PUCC's dynamic team!</p>
+                    </div>
+                </a>
+        
+                <a href="#workshopDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="workshopDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Coding Contest Workshop: Register Today!</span>
+                        <small class="text-muted">1 day ago</small>
+                    </div>
+                    <div id="workshopDetails" class="collapse mt-2">
+                        <p>Prepare for the upcoming coding contest with our intensive workshop! Learn essential algorithms, data structures, and problem-solving techniques from experienced instructors. The workshop will be held on [Date] at [Time] in [Location]. Limited spots are available, so register now to secure your place. This is your chance to gain the skills and confidence you need to excel in the competition.</p>
+                    </div>
+                </a>
+        
+                <a href="#membershipContestDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="membershipContestDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>PUCC Membership Contest: Exciting Prizes!</span>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                    <div id="membershipContestDetails" class="collapse mt-2">
+                        <p>New PUCC members, get ready for an exciting competition! Participate in our exclusive membership contest for a chance to win fantastic prizes. The contest will test your skills and knowledge in various tech-related areas. Details will be announced on [Date]. Stay tuned for updates and prepare to showcase your talent!</p>
+                    </div>
+                </a>
+        
+                <a href="#qaDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="qaDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>PUCC Q&A Session: Ask Your Questions!</span>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <div id="qaDetails" class="collapse mt-2">
+                        <p>Have questions about the coding contest, membership, or any other PUCC activities? Join our Q&A session on [Date] at [Time] in [Location]. Our team will be available to answer all your queries and provide you with the information you need. Don't miss this opportunity to get your questions answered and learn more about PUCC!</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Join Button -->
+        <div class="text-center mb-5">
+            <a href="signup.php" class="btn btn-outline-primary">Become a Member</a>
+        </div>
+    </div>
+       <!-- Footer -->
+       <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> info@pucms.com</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Premier University Club Management System
+                . All rights reserved</p>
+        </div>
+    </footer>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

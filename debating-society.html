@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier University Debating Society</title>
+    <link rel="stylesheet" href="club.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <img src="LOGO.png" alt="University Logo" class="logo">
+                
+                <!-- Title -->
+                <h1 class="title-text">Premier University Club Management System</h1>
+                
+                <!-- Auth Buttons -->
+                <div class="auth-buttons ms-auto">
+                    <a href="login.php" class="btn btn-outline-primary">Login</a>
+                    <a href="signup.php" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br><br>
+    <!-- Hero Section -->
+    <section class="club-hero text-center">
+        <h1 class="display-4 mb-3">Premier University Debating Society</h1>
+        <p class="lead">Master the art of persuasion and critical thinking through competitive debates and public speaking forums.</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Carousel -->
+        <div id="debateCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="debate1.jpg" class="d-block w-100" alt="Debate Session">
+                </div>
+                <div class="carousel-item">
+                    <img src="debate2.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="debate3.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="debate4.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="debate5.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+            </div>
+        </div>
+
+        <!-- Announcements -->
+        <section class="announcements mb-5">
+            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-bullhorn me-2"></i>Latest News</h3>
+            <div class="list-group">
+                <a href="#debateDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="debateDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Inter-University Debate Competition: Registration Open!</span>
+                        <small class="text-muted">1 day ago</small>
+                    </div>
+                    <div id="debateDetails" class="collapse mt-2">
+                        <p>Premier University is proud to host the annual Inter-University Debate Competition! This year's theme focuses on critical thinking and persuasive communication. Teams from universities across the region are invited to participate. The competition will be held on [Date] at [Time] in [Location]. Registration deadline is October 15th. Don't miss this opportunity to showcase your debating skills!</p>
+                    </div>
+                </a>
+        
+                <a href="#aiSeminarDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="aiSeminarDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>AI and Machine Learning Seminar: Expert Insights!</span>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                    <div id="aiSeminarDetails" class="collapse mt-2">
+                        <p>Join us for an insightful seminar on Artificial Intelligence and Machine Learning, featuring renowned experts in the field. Learn about the latest advancements, applications, and future trends in AI. The seminar will take place on [Date] at [Time] in [Location]. Registration is required. Limited seats available. Register now to secure your spot!</p>
+                    </div>
+                </a>
+        
+                <a href="#careerFairDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="careerFairDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Premier University Career Fair: Connect with Employers!</span>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <div id="careerFairDetails" class="collapse mt-2">
+                        <p>Premier University is organizing a Career Fair to connect students and alumni with leading employers in various industries. Explore job opportunities, network with recruiters, and learn about career paths. The Career Fair will be held on [Date] from [Time] to [Time] in [Location]. Bring your resumes and dress professionally!</p>
+                    </div>
+                </a>
+        
+                <a href="#writingWorkshopDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="writingWorkshopDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Creative Writing Workshop: Unleash Your Imagination!</span>
+                        <small class="text-muted">4 days ago</small>
+                    </div>
+                    <div id="writingWorkshopDetails" class="collapse mt-2">
+                        <p>Join our Creative Writing Workshop and discover the art of storytelling and expression. Learn techniques for crafting compelling narratives, developing characters, and refining your writing style. The workshop will be conducted by [Instructor Name] on [Date] at [Time] in [Location]. Register now to unlock your creative potential!</p>
+                    </div>
+                </a>
+        
+                <a href="#sportsDayDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="sportsDayDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Premier University Sports Day: Join the Fun!</span>
+                        <small class="text-muted">5 days ago</small>
+                    </div>
+                    <div id="sportsDayDetails" class="collapse mt-2">
+                        <p>Get ready for a day of fun and fitness at Premier University's annual Sports Day! Participate in various sports and games, enjoy friendly competition, and celebrate teamwork. The event will take place on [Date] from [Time] to [Time] at [Location]. All students and faculty are welcome to join. Let's make it a memorable day!</p>
+                    </div>
+                </a>
+        
+                <a href="#culturalNightDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="culturalNightDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Cultural Night: Celebrate Diversity!</span>
+                        <small class="text-muted">6 days ago</small>
+                    </div>
+                    <div id="culturalNightDetails" class="collapse mt-2">
+                        <p>Experience the rich cultural diversity of our university at the Cultural Night! Enjoy performances, exhibitions, and food from different cultures. The event will be held on [Date] at [Time] in [Location]. Come and celebrate unity in diversity!</p>
+                    </div>
+                </a>
+        
+            </div>
+        </section>
+        <!-- Join Button -->
+        <div class="text-center mb-5">
+            <a href="signup.php" class="btn btn-outline-primary">Become a Member</a>
+        </div>
+    </div>
+   <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-envelope"></i> info@pucms.com</p>
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Premier University Club Management System
+            . All rights reserved</p>
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

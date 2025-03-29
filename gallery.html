@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Club Management</title>
+    <link rel="stylesheet" href="pic.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <img src="LOGO.png" alt="University Logo" class="logo">
+                
+                <!-- Title -->
+                <h1 class="title-text">Premier University Club Management System</h1>
+                
+                <!-- Auth Buttons -->
+                <div class="auth-buttons ms-auto">
+                    <a href="login.php" class="btn btn-outline-primary">Login</a>
+                    <a href="signup.php" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg nav-bar" style="background-color: #2C3E50; color:white">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br><br>
+<!-- Gallery Section -->
+<section class="gallery py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="fas fa-camera me-2"></i>Club Galleries</h2>
+
+        <div class="row g-4">
+            <!-- Debating Society Gallery -->
+            <div class="col-md-4">
+                <div class="card shadow-sm gallery-card">
+                    <div id="debateCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="debate1.jpg" class="d-block w-100" alt="Debate Event">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="debate2.jpg" class="d-block w-100" alt="Debate Session">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="debate3.jpg" class="d-block w-100" alt="Award Ceremony">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#debateCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#debateCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Debating Society</h5>
+                        <p class="text-muted mb-0">National Championship Moments</p>
+                        <a href="debating_society.html" class="btn btn-club">Explore Debating Society</a>
+                        <a href="signup.php" class="btn btn-outline-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Computer Club Gallery -->
+            <div class="col-md-4">
+                <div class="card shadow-sm gallery-card">
+                    <div id="computerCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="code1.jpg" class="d-block w-100" alt="Hackathon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="code2.jpg" class="d-block w-100" alt="Workshop">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="code3.jpg" class="d-block w-100" alt="Project Demo">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#computerCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#computerCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Computer Club</h5>
+                        <p class="text-muted mb-0">Tech Innovation Highlights</p>
+                        <a href="computer_club.html" class="btn btn-club">Explore Computer Club</a>
+                        <a href="signup.php" class="btn btn-outline-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robotics Club Gallery -->
+            <div class="col-md-4">
+                <div class="card shadow-sm gallery-card">
+                    <div id="roboticsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="robot1.jpg" class="d-block w-100" alt="Robot Prototype">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="robot2.jpg" class="d-block w-100" alt="Competition">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="robot3.jpg" class="d-block w-100" alt="Team Work">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#roboticsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#roboticsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Robotics Club</h5>
+                        <p class="text-muted mb-0">Innovation in Motion</p>
+                        <a href="robotics_club.html" class="btn btn-club">Explore Robotics Club</a>
+                        <a href="signup.php" class="btn btn-outline-primary">Join Now</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@pucms.com</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Premier University Club Management System
+                    . All rights reserved</p>
+            </div>
+        </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

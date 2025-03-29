@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier University Robotics Club</title>
+    <link rel="stylesheet" href="club.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <img src="LOGO.png" alt="University Logo" class="logo">
+                
+                <!-- Title -->
+                <h1 class="title-text">Premier University Club Management System</h1>
+                
+                <!-- Auth Buttons -->
+                <div class="auth-buttons ms-auto">
+                    <a href="login.php" class="btn btn-outline-primary">Login</a>
+                    <a href="signup.php" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg nav-bar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br><br>
+
+    <!-- Hero Section -->
+    <section class="club-hero text-center">
+        <h1 class="display-4 mb-3">Premier University Robotics Club</h1>
+        <p class="lead">Design, build, and compete with intelligent robotic systems.</p>
+    </section>
+
+    <div class="container">
+        <!-- Carousel -->
+        <div id="debateCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="robot1.jpg" class="d-block w-100" alt="Debate Session">
+                </div>
+                <div class="carousel-item">
+                    <img src="robot2.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="robot3.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="robot4.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+                <div class="carousel-item">
+                    <img src="robot5.jpg" class="d-block w-100" alt="Award Ceremony">
+                </div>
+            </div>
+        </div>
+
+        <!-- Announcements -->
+        <section class="announcements mb-5">
+            <h3 class="mb-4 border-bottom pb-2"><i class="fas fa-bullhorn me-2"></i>Premier University Robotics Club News</h3>
+            <div class="list-group">
+                <a href="#roboticsWorkshopDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="roboticsWorkshopDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Robotics Workshop: Build Your First Robot!</span>
+                        <small class="text-muted">1 day ago</small>
+                    </div>
+                    <div id="roboticsWorkshopDetails" class="collapse mt-2">
+                        <p>Join the Premier University Robotics Club for an exciting hands-on robotics workshop! Learn the fundamentals of robot design, programming, and construction. This workshop is perfect for beginners and enthusiasts alike. It will be held on [Date] at [Time] in [Location]. Register now to secure your spot and start your robotics journey!</p>
+                    </div>
+                </a>
+        
+                <a href="#roboticsCompetitionDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="roboticsCompetitionDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Robotics Competition: Battle of the Bots!</span>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                    <div id="roboticsCompetitionDetails" class="collapse mt-2">
+                        <p>Get ready for the ultimate robotics showdown! The Premier University Robotics Club is hosting its annual robotics competition. Teams will compete in various challenges, showcasing their robot design and programming skills. The competition will take place on [Date] from [Time] to [Time] in [Location]. Register your team before [Date] and prepare for the battle!</p>
+                    </div>
+                </a>
+        
+                <a href="#roboticsProjectShowcaseDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="roboticsProjectShowcaseDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Robotics Project Showcase: Display Your Innovations!</span>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <div id="roboticsProjectShowcaseDetails" class="collapse mt-2">
+                        <p>Showcase your innovative robotics projects at the Premier University Robotics Club's project showcase! This is a great opportunity to demonstrate your creativity and technical skills to the university community. The showcase will be held on [Date] at [Time] in [Location]. Submit your project proposals before [Date] and get ready to inspire!</p>
+                    </div>
+                </a>
+        
+                <a href="#roboticsClubMeetingDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="roboticsClubMeetingDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Robotics Club Meeting: Discuss Future Projects!</span>
+                        <small class="text-muted">4 days ago</small>
+                    </div>
+                    <div id="roboticsClubMeetingDetails" class="collapse mt-2">
+                        <p>Join the Premier University Robotics Club for our monthly meeting! Discuss upcoming projects, share ideas, and collaborate with fellow robotics enthusiasts. This is a great opportunity to network and contribute to the club's activities. The meeting will be held on [Date] at [Time] in [Location]. All club members and interested students are welcome!</p>
+                    </div>
+                </a>
+        
+                <a href="#roboticsGuestLectureDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="roboticsGuestLectureDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Guest Lecture: Robotics and the Future of AI</span>
+                        <small class="text-muted">5 days ago</small>
+                    </div>
+                    <div id="roboticsGuestLectureDetails" class="collapse mt-2">
+                        <p>Attend a special guest lecture on "Robotics and the Future of AI" by [Guest Speaker Name], a leading expert in the field. Learn about the latest trends and advancements in robotics and artificial intelligence. The lecture will be held on [Date] at [Time] in [Location]. Don't miss this opportunity to gain valuable insights!</p>
+                    </div>
+                </a>
+        
+                <a href="#roboticsFundraisingDetails" class="list-group-item list-group-item-action" data-bs-toggle="collapse" aria-expanded="false" aria-controls="roboticsFundraisingDetails">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Robotics Club Fundraiser: Support Our Projects!</span>
+                        <small class="text-muted">6 days ago</small>
+                    </div>
+                    <div id="roboticsFundraisingDetails" class="collapse mt-2">
+                        <p>Support the Premier University Robotics Club's innovative projects by participating in our fundraising event! Your contributions will help us purchase materials, tools, and equipment for our robotics projects. The fundraiser will be held on [Date] from [Time] to [Time] in [Location]. Join us and help us build the future of robotics!</p>
+                    </div>
+                </a>
+        
+            </div>
+        </section>
+        <!-- Join Button -->
+        <div class="text-center mb-5">
+            <a href="signup.php" class="btn btn-outline-primary">Become a Member</a>
+        </div>
+    </div>
+   <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-envelope"></i> info@pucms.com</p>
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Premier University Club Management System
+            . All rights reserved</p>
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
